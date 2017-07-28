@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions">
+<ui:composition template="/templates/masterLayout.xhtml">
+	<ui:define name="content">
+		<h1>JSF Sample</h1>
+		<br />
+		<h:form>
+			<ul>
+				<li><p:commandLink action="/views/sample1/sample1.jsf">Sample 1</p:commandLink></li>
+				<li><p:outputLabel value="Sample 2" />
+					<ul>
+						<li><p:commandLink action="/views/sample2/sample2_1.jsf">Sample 2-1</p:commandLink></li>
+						<li><p:commandLink action="/views/sample2/sample2_2.jsf">Sample 2-2</p:commandLink></li>
+					</ul></li>
+				<li><p:commandLink action="/views/sample3/sample3.jsf">Sample 3</p:commandLink></li>
+			</ul>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>
